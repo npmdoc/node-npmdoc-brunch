@@ -83,6 +83,45 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.build">module brunch.build</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.build.build">
+            function <span class="apidocSignatureSpan">brunch.</span>build
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.new">module brunch.new</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.new.new">
+            function <span class="apidocSignatureSpan">brunch.</span>new
+            <span class="apidocSignatureSpan">(rootPath, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.watch">module brunch.watch</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.watch.watch">
+            function <span class="apidocSignatureSpan">brunch.</span>watch
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -130,6 +169,89 @@
 
     <h2>
         <a href="#apidoc.element.brunch.watch" id="apidoc.element.brunch.watch">
+        function <span class="apidocSignatureSpan">brunch.</span>watch
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">watch = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  initWatcher(watchedPaths) {
+const isDebug = !!process.env.DEBUG;
+const config = this.config._normalized;
+const paths = config.paths;
+const isConfig = path =&gt; paths.allConfigFiles.includes(path);
+
+speed.profile('Loaded watcher');
+this.watcher = chokidar.<span class="apidocCodeKeywordSpan">watch</span>(watchedPaths, Object.assign({
+  ignored,
+  persistent: config.persistent,
+}, config.watcher))
+  .on('error', error =&gt; {
+    // TODO: Watch error.
+    logger.error(error);
+  })
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.brunch.build" id="apidoc.module.brunch.build">module brunch.build</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.build.build" id="apidoc.element.brunch.build.build">
+        function <span class="apidocSignatureSpan">brunch.</span>build
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">build = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.brunch.new" id="apidoc.module.brunch.new">module brunch.new</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.new.new" id="apidoc.element.brunch.new.new">
+        function <span class="apidocSignatureSpan">brunch.</span>new
+        <span class="apidocSignatureSpan">(rootPath, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(rootPath, options) =&gt; {
+  checkLegacyNewSyntax(options);
+
+  const initSkeleton = require('init-skeleton').init;
+  const skeleton = options.skeleton ||
+    process.env.BRUNCH_INIT_SKELETON ||
+    defaultSkeleton;
+
+  return initSkeleton(skeleton, {
+    logger,
+    rootPath,
+    commandName: 'brunch new',
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.brunch.watch" id="apidoc.module.brunch.watch">module brunch.watch</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.watch.watch" id="apidoc.element.brunch.watch.watch">
         function <span class="apidocSignatureSpan">brunch.</span>watch
         <span class="apidocSignatureSpan">()</span>
         </a>
