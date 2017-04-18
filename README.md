@@ -1,9 +1,14 @@
-# api documentation for  [brunch (v2.10.9)](http://brunch.io/)  [![npm package](https://img.shields.io/npm/v/npmdoc-brunch.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-brunch) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-brunch.svg)](https://travis-ci.org/npmdoc/node-npmdoc-brunch)
+# npmdoc-brunch
+
+#### api documentation for  [brunch (v2.10.9)](http://brunch.io/)  [![npm package](https://img.shields.io/npm/v/npmdoc-brunch.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-brunch) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-brunch.svg)](https://travis-ci.org/npmdoc/node-npmdoc-brunch)
+
 #### Fast front-end web app build tool with simple declarative config, seamless incremental compilation for rapid development, an opinionated pipeline and workflow, and core support for source maps
 
-[![NPM](https://nodei.co/npm/brunch.png?downloads=true)](https://www.npmjs.com/package/brunch)
+[![NPM](https://nodei.co/npm/brunch.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/brunch)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-brunch/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-brunch_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-brunch/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-brunch/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-brunch/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-brunch/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-brunch/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-brunch/build/screenCapture.npmPackageListing.svg)
 
@@ -106,25 +111,20 @@
     "main": "./lib/index",
     "maintainers": [
         {
-            "name": "tosh",
-            "email": "tosh@blossom.io"
+            "name": "tosh"
         },
         {
-            "name": "nikgraf",
-            "email": "nik@deck.cc"
+            "name": "nikgraf"
         },
         {
-            "name": "paulmillr",
-            "email": "paul@paulmillr.com"
+            "name": "paulmillr"
         },
         {
-            "name": "es128",
-            "email": "elan.shanker+npm@gmail.com"
+            "name": "es128"
         }
     ],
     "name": "brunch",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/brunch/brunch.git"
@@ -137,78 +137,6 @@
     },
     "version": "2.10.9"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module brunch](#apidoc.module.brunch)
-1.  [function <span class="apidocSignatureSpan">brunch.</span>build ()](#apidoc.element.brunch.build)
-1.  [function <span class="apidocSignatureSpan">brunch.</span>new (rootPath, options)](#apidoc.element.brunch.new)
-1.  [function <span class="apidocSignatureSpan">brunch.</span>watch ()](#apidoc.element.brunch.watch)
-
-
-
-# <a name="apidoc.module.brunch"></a>[module brunch](#apidoc.module.brunch)
-
-#### <a name="apidoc.element.brunch.build"></a>[function <span class="apidocSignatureSpan">brunch.</span>build ()](#apidoc.element.brunch.build)
-- description and source-code
-```javascript
-build = function () { [native code] }
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.brunch.new"></a>[function <span class="apidocSignatureSpan">brunch.</span>new (rootPath, options)](#apidoc.element.brunch.new)
-- description and source-code
-```javascript
-(rootPath, options) => {
-  checkLegacyNewSyntax(options);
-
-  const initSkeleton = require('init-skeleton').init;
-  const skeleton = options.skeleton ||
-    process.env.BRUNCH_INIT_SKELETON ||
-    defaultSkeleton;
-
-  return initSkeleton(skeleton, {
-    logger,
-    rootPath,
-    commandName: 'brunch new',
-  });
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.brunch.watch"></a>[function <span class="apidocSignatureSpan">brunch.</span>watch ()](#apidoc.element.brunch.watch)
-- description and source-code
-```javascript
-watch = function () { [native code] }
-```
-- example usage
-```shell
-...
-  initWatcher(watchedPaths) {
-const isDebug = !!process.env.DEBUG;
-const config = this.config._normalized;
-const paths = config.paths;
-const isConfig = path => paths.allConfigFiles.includes(path);
-
-speed.profile('Loaded watcher');
-this.watcher = chokidar.watch(watchedPaths, Object.assign({
-  ignored,
-  persistent: config.persistent,
-}, config.watcher))
-  .on('error', error => {
-    // TODO: Watch error.
-    logger.error(error);
-  })
-...
 ```
 
 
