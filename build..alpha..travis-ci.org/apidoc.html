@@ -72,6 +72,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.generate">
+            function <span class="apidocSignatureSpan">brunch.</span>generate
+            <span class="apidocSignatureSpan">(path, targets, config, optimizers)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.brunch.new">
             function <span class="apidocSignatureSpan">brunch.</span>new
             <span class="apidocSignatureSpan">(rootPath, options)</span>
@@ -88,14 +97,56 @@
 
         </li>
 
-    </ol></li>
+        <li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.build">module brunch.build</a><ol>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">brunch.</span>cli</span>
+
+        </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.brunch.build.build">
-            function <span class="apidocSignatureSpan">brunch.</span>build
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">brunch.</span>config</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">brunch.</span>helpers</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">brunch.</span>hmr</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">brunch.</span>index</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">brunch.</span>modules</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">brunch.</span>pipeline</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.cli">module brunch.cli</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.cli.run">
+            function <span class="apidocSignatureSpan">brunch.cli.</span>run
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -103,26 +154,334 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.new">module brunch.new</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.config">module brunch.config</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.brunch.new.new">
-            function <span class="apidocSignatureSpan">brunch.</span>new
-            <span class="apidocSignatureSpan">(rootPath, options)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.config.loadConfig">
+            function <span class="apidocSignatureSpan">brunch.config.</span>loadConfig
+            <span class="apidocSignatureSpan">(persistent, options, fromWorker)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.config.loadConfigWorker">
+            function <span class="apidocSignatureSpan">brunch.config.</span>loadConfigWorker
+            <span class="apidocSignatureSpan">(persistent, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.config.setConfigDefaults">
+            function <span class="apidocSignatureSpan">brunch.config.</span>setConfigDefaults
+            <span class="apidocSignatureSpan">(config, configPath)</span>
             </a>
 
         </li>
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.watch">module brunch.watch</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.generate">module brunch.generate</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.brunch.watch.watch">
-            function <span class="apidocSignatureSpan">brunch.</span>watch
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.generate.generate">
+            function <span class="apidocSignatureSpan">brunch.</span>generate
+            <span class="apidocSignatureSpan">(path, targets, config, optimizers)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.generate.sortByConfig">
+            function <span class="apidocSignatureSpan">brunch.generate.</span>sortByConfig
+            <span class="apidocSignatureSpan">(files, config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.generate.writeFile">
+            function <span class="apidocSignatureSpan">brunch.generate.</span>writeFile
+            <span class="apidocSignatureSpan">(path, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.generate.writeStatics">
+            function <span class="apidocSignatureSpan">brunch.generate.</span>writeStatics
+            <span class="apidocSignatureSpan">(toRemove, toWrite)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.helpers">module brunch.helpers</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.FrozenMap">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>FrozenMap
+            <span class="apidocSignatureSpan">(key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.FrozenSet">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>FrozenSet
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.asyncFilter">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>asyncFilter
+            <span class="apidocSignatureSpan">(arr, fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.deepAssign">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>deepAssign
+            <span class="apidocSignatureSpan">(target, source, filter)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.deepFreeze">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>deepFreeze
+            <span class="apidocSignatureSpan">(object, except)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.flatten">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>flatten
+            <span class="apidocSignatureSpan">([], array)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.formatError">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>formatError
+            <span class="apidocSignatureSpan">(file.error, file.error.pipelineCode, file.path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.formatOptimizerError">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>formatOptimizerError
+            <span class="apidocSignatureSpan">(error, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.fsExists">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>fsExists
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.generateCompilationLog">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>generateCompilationLog
+            <span class="apidocSignatureSpan">(startTime, copiedAssets, generatedFiles, disposedFiles)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.getCompilationProgress">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>getCompilationProgress
+            <span class="apidocSignatureSpan">(timePassed, logger)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.isSymlink">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>isSymlink
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.prettify">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>prettify
+            <span class="apidocSignatureSpan">(object)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.promiseReduce">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>promiseReduce
+            <span class="apidocSignatureSpan">(array, callback, initial)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.helpers.pull">
+            function <span class="apidocSignatureSpan">brunch.helpers.</span>pull
+            <span class="apidocSignatureSpan">(array, is)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.hmr">module brunch.hmr</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.hmr.generate">
+            function <span class="apidocSignatureSpan">brunch.hmr.</span>generate
+            <span class="apidocSignatureSpan">(generateModuleFiles, nonModuleFiles, processor, deppack, definition, path, root)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.hmr.isEnabled">
+            function <span class="apidocSignatureSpan">brunch.hmr.</span>isEnabled
+            <span class="apidocSignatureSpan">(&#x27;production&#x27;)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.index">module brunch.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.index.close">
+            function <span class="apidocSignatureSpan">brunch.index.</span>close
             <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.index.init">
+            function <span class="apidocSignatureSpan">brunch.index.</span>init
+            <span class="apidocSignatureSpan">(options, cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.index.parallel">
+            function <span class="apidocSignatureSpan">brunch.index.</span>parallel
+            <span class="apidocSignatureSpan">(id, fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.index.processJob">
+            function <span class="apidocSignatureSpan">brunch.index.</span>processJob
+            <span class="apidocSignatureSpan">(job, hash)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.modules">module brunch.modules</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.modules.normalizeDefinition">
+            function <span class="apidocSignatureSpan">brunch.modules.</span>normalizeDefinition
+            <span class="apidocSignatureSpan">(definition)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.modules.normalizeWrapper">
+            function <span class="apidocSignatureSpan">brunch.modules.</span>normalizeWrapper
+            <span class="apidocSignatureSpan">(wrapper, nameCleaner)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.brunch.pipeline">module brunch.pipeline</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.pipeline.processAsset">
+            function <span class="apidocSignatureSpan">brunch.pipeline.</span>processAsset
+            <span class="apidocSignatureSpan">(&#x27;compileStatic&#x27;)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.pipeline.processFile">
+            function <span class="apidocSignatureSpan">brunch.pipeline.</span>processFile
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.pipeline.setNpmCompilers">
+            function <span class="apidocSignatureSpan">brunch.pipeline.</span>setNpmCompilers
+            <span class="apidocSignatureSpan">(array)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.brunch.pipeline.setPlugins">
+            function <span class="apidocSignatureSpan">brunch.pipeline.</span>setPlugins
+            <span class="apidocSignatureSpan">(array)</span>
             </a>
 
         </li>
@@ -143,6 +502,59 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">build = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.generate" id="apidoc.element.brunch.generate">
+        function <span class="apidocSignatureSpan">brunch.</span>generate
+        <span class="apidocSignatureSpan">(path, targets, config, optimizers)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(path, targets, config, optimizers) =&#x3e; {
+  const type = targets.some(file =&#x3e; jsTypes.includes(file.type)) ?
+    &#x27;javascript&#x27; : &#x27;stylesheet&#x27;;
+
+  const foptim = optimizers.filter(optimizer =&#x3e; optimizer.type === type);
+  const joinKey = path.slice(config.paths.public.length + 1);
+  const typeConfig = config.files[`${type}s`] || {};
+  const joinToValue = typeConfig.joinTo &#x26;&#x26; typeConfig.joinTo[joinKey] || {};
+  const sorted = sort(targets, config, joinToValue);
+  const norm = config._normalized;
+  const definition = type === &#x27;javascript&#x27; ? norm.modules.definition : null;
+  const cc = concat(
+    sorted, path, definition,
+    norm.modules.autoRequire[joinKey],
+    config
+  );
+  const code = cc.code;
+  const map = cc.map;
+  const withMaps = map &#x26;&#x26; config.sourceMaps;
+  const mapPath = `${path}.map`;
+  return optimize(code, map, path, foptim, targets)
+    .then(data =&#x3e; {
+      if (withMaps) {
+        const mapRoute = config.sourceMaps === &#x27;inline&#x27; ?
+          getInlineSourceMapUrl(data.map) :
+          config.sourceMaps === &#x27;absoluteUrl&#x27; ?
+          mapPath.replace(config.paths.public, &#x27;&#x27;) :
+          sysPath.basename(mapPath);
+        const controlChar = config.sourceMaps === &#x27;old&#x27; ? &#x27;@&#x27; : &#x27;#&#x27;;
+        const end = `${controlChar} sourceMappingURL=${mapRoute}`;
+        data.code += type === &#x27;javascript&#x27; ? `\n//${end}` : `\n/*${end}*/`;
+      }
+      return data;
+    })
+    .then(data =&#x3e; {
+      return Promise.all([
+        writeFile(path, data.code),
+        withMaps &#x26;&#x26; config.sourceMaps !== &#x27;inline&#x27; &#x26;&#x26; writeFile(mapPath, data.map.toString()),
+      ]).then(() =&#x3e; data);
+    });
+}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -202,20 +614,188 @@ this.watcher = chokidar.<span class="apidocCodeKeywordSpan">watch</span>(watched
     </ul>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.brunch.build" id="apidoc.module.brunch.build">module brunch.build</a></h1>
+<h1><a href="#apidoc.module.brunch.cli" id="apidoc.module.brunch.cli">module brunch.cli</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.brunch.build.build" id="apidoc.element.brunch.build.build">
-        function <span class="apidocSignatureSpan">brunch.</span>build
+        <a href="#apidoc.element.brunch.cli.run" id="apidoc.element.brunch.cli.run">
+        function <span class="apidocSignatureSpan">brunch.cli.</span>run
         <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">build = function () { [native code] }</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">run = function () {
+  var args = process.argv.slice();
+  var command = args[2];
+
+  // Need this since `brunch` binary will fork and run `run-cli`,
+  // but we still want to see `brunch` in help.
+  args[1] = &#x27;brunch&#x27;;
+
+  var error = checkForRemovedOptions(args, command);
+  if (error) {
+    logger.error(error);
+    return;
+  }
+
+  program.parse(args);
+
+  var validCommand = program.commands.some(function(cmd) {
+    return cmd.name() === command || cmd.alias() === command;
+  });
+
+  if (!validCommand) program.help();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    } catch (e) {
+      // empty
+    }
+  }
+
+  // This is needed to support cases when the local Brunch is of an older version
+  // and does not have a run-cli.js file.
+  require(join(libPath, files.old)).<span class="apidocCodeKeywordSpan">run</span>();
+};
+
+var loadGlobalBrunch = function() {
+  loadBrunch(join(fs.realpathSync(__dirname), &#x27;..&#x27;, &#x27;lib&#x27;));
+};
+
+var localPath = join(sysPath.resolve(&#x27;.&#x27;), &#x27;node_modules&#x27;, &#x27;brunch&#x27;, &#x27;lib&#x27;, files.old);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.brunch.config" id="apidoc.module.brunch.config">module brunch.config</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.config.loadConfig" id="apidoc.element.brunch.config.loadConfig">
+        function <span class="apidocSignatureSpan">brunch.config.</span>loadConfig
+        <span class="apidocSignatureSpan">(persistent, options, fromWorker)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(persistent, options, fromWorker) =&#x3e; {
+  const configPath = options.config || defaultConfigFilename;
+  const params = initParams(persistent, options);
+
+  return tryToLoad(configPath)
+    .then(validateConfig)
+    .then(checkNpmModules)
+    .then(config =&#x3e; setConfigDefaults(config, configPath))
+    .then(fromWorker || addDefaultServer)
+    .then(config =&#x3e; applyOverrides(config, params.env))
+    .then(config =&#x3e; helpers.deepAssign(config, params))
+    .then(trimTrailingSlashes)
+    .then(normalizeConfig)
+    .then(checkProjectDependencies)
+    .then(fromWorker || addPackageManagers)
+    .then(helpers.deepFreeze(dontFreeze));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (!persistent) {
+  process.on(&#x27;exit&#x27;, previousCode =&#x3e; {
+    const currentCode = logger.errorHappened ? 1 : previousCode;
+    process.exit(currentCode);
+  });
+}
+
+application.<span class="apidocCodeKeywordSpan">loadConfig</span>(persistent, options)
+  .then(cfg =&#x3e; {
+    this.config = cfg;
+    if (options.jobs &#x3e; 1) {
+      workers.init(options, cfg);
+    }
+    return Promise.all([
+      getWatchedPaths(cfg._normalized),
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.config.loadConfigWorker" id="apidoc.element.brunch.config.loadConfigWorker">
+        function <span class="apidocSignatureSpan">brunch.config.</span>loadConfigWorker
+        <span class="apidocSignatureSpan">(persistent, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(persistent, options) =&#x3e; {
+  return loadConfig(persistent, options, true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.config.setConfigDefaults" id="apidoc.element.brunch.config.setConfigDefaults">
+        function <span class="apidocSignatureSpan">brunch.config.</span>setConfigDefaults
+        <span class="apidocSignatureSpan">(config, configPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(config, configPath) =&#x3e; {
+  setLoggyOptions(config.notifications);
+
+  const join = (parent, name) =&#x3e; {
+    return sysPath.isAbsolute(name) ? name : sysPath.join(config.paths[parent], name);
+  };
+  const joinRoot = name =&#x3e; join(&#x27;root&#x27;, name);
+
+  // Paths.
+  const paths = config.paths;
+
+  paths.public = joinRoot(paths.public);
+  paths.watched = paths.watched.map(joinRoot);
+
+  if (paths.config == null) paths.config = configPath || joinRoot(&#x27;config&#x27;);
+  paths.packageConfig = joinRoot(paths.packageConfig);
+  paths.bowerConfig = joinRoot(paths.bowerConfig);
+
+  // Conventions.
+  const conventions = config.conventions;
+  if (paths.ignored) {
+    conventions.ignored = paths.ignored;
+  }
+
+  // Server.
+  const server = config.server;
+  server.publicPath = paths.public;
+  if (server.run == null) server.run = false;
+  if (!config.persistent) server.run = false;
+
+  // Hooks.
+  if (config.onCompile) {
+    config.hooks.onCompile = config.onCompile;
+  }
+  if (config.preCompile) {
+    config.hooks.preCompile = config.preCompile;
+  }
+
+  return config;
+}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -223,28 +803,807 @@ this.watcher = chokidar.<span class="apidocCodeKeywordSpan">watch</span>(watched
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.brunch.new" id="apidoc.module.brunch.new">module brunch.new</a></h1>
+<h1><a href="#apidoc.module.brunch.generate" id="apidoc.module.brunch.generate">module brunch.generate</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.brunch.new.new" id="apidoc.element.brunch.new.new">
-        function <span class="apidocSignatureSpan">brunch.</span>new
-        <span class="apidocSignatureSpan">(rootPath, options)</span>
+        <a href="#apidoc.element.brunch.generate.generate" id="apidoc.element.brunch.generate.generate">
+        function <span class="apidocSignatureSpan">brunch.</span>generate
+        <span class="apidocSignatureSpan">(path, targets, config, optimizers)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">(rootPath, options) =&#x3e; {
-  checkLegacyNewSyntax(options);
+    <li>description and source-code<pre class="apidocCodePre">(path, targets, config, optimizers) =&#x3e; {
+  const type = targets.some(file =&#x3e; jsTypes.includes(file.type)) ?
+    &#x27;javascript&#x27; : &#x27;stylesheet&#x27;;
 
-  const initSkeleton = require(&#x27;init-skeleton&#x27;).init;
-  const skeleton = options.skeleton ||
-    process.env.BRUNCH_INIT_SKELETON ||
-    defaultSkeleton;
+  const foptim = optimizers.filter(optimizer =&#x3e; optimizer.type === type);
+  const joinKey = path.slice(config.paths.public.length + 1);
+  const typeConfig = config.files[`${type}s`] || {};
+  const joinToValue = typeConfig.joinTo &#x26;&#x26; typeConfig.joinTo[joinKey] || {};
+  const sorted = sort(targets, config, joinToValue);
+  const norm = config._normalized;
+  const definition = type === &#x27;javascript&#x27; ? norm.modules.definition : null;
+  const cc = concat(
+    sorted, path, definition,
+    norm.modules.autoRequire[joinKey],
+    config
+  );
+  const code = cc.code;
+  const map = cc.map;
+  const withMaps = map &#x26;&#x26; config.sourceMaps;
+  const mapPath = `${path}.map`;
+  return optimize(code, map, path, foptim, targets)
+    .then(data =&#x3e; {
+      if (withMaps) {
+        const mapRoute = config.sourceMaps === &#x27;inline&#x27; ?
+          getInlineSourceMapUrl(data.map) :
+          config.sourceMaps === &#x27;absoluteUrl&#x27; ?
+          mapPath.replace(config.paths.public, &#x27;&#x27;) :
+          sysPath.basename(mapPath);
+        const controlChar = config.sourceMaps === &#x27;old&#x27; ? &#x27;@&#x27; : &#x27;#&#x27;;
+        const end = `${controlChar} sourceMappingURL=${mapRoute}`;
+        data.code += type === &#x27;javascript&#x27; ? `\n//${end}` : `\n/*${end}*/`;
+      }
+      return data;
+    })
+    .then(data =&#x3e; {
+      return Promise.all([
+        writeFile(path, data.code),
+        withMaps &#x26;&#x26; config.sourceMaps !== &#x27;inline&#x27; &#x26;&#x26; writeFile(mapPath, data.map.toString()),
+      ]).then(() =&#x3e; data);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
 
-  return initSkeleton(skeleton, {
-    logger,
-    rootPath,
-    commandName: &#x27;brunch new&#x27;,
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.generate.sortByConfig" id="apidoc.element.brunch.generate.sortByConfig">
+        function <span class="apidocSignatureSpan">brunch.generate.</span>sortByConfig
+        <span class="apidocSignatureSpan">(files, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(files, config) =&#x3e; {
+  if (toString.call(config) !== &#x27;[object Object]&#x27;) return files;
+  const criteria = [
+    config.before || [],
+    config.after || [],
+    config.joinToValue || [],
+    config.bower || [],
+    config.vendorConvention || (() =&#x3e; false),
+  ];
+  return anysort.grouped(files, criteria, [0, 2, 3, 4, 5, 1]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.generate.writeFile" id="apidoc.element.brunch.generate.writeFile">
+        function <span class="apidocSignatureSpan">brunch.generate.</span>writeFile
+        <span class="apidocSignatureSpan">(path, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(path, data) =&#x3e; {
+  debug(`Writing ${path}`);
+  const write = () =&#x3e; fsWriteFile(path, data);
+  const rwxrxrx = 0o755;
+
+  return write().catch(() =&#x3e; {
+    return mkdirp(sysPath.dirname(path), rwxrxrx).then(write);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.generate.writeStatics" id="apidoc.element.brunch.generate.writeStatics">
+        function <span class="apidocSignatureSpan">brunch.generate.</span>writeStatics
+        <span class="apidocSignatureSpan">(toRemove, toWrite)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(toRemove, toWrite) =&#x3e; {
+  const removePromise = promiseReduce(toRemove, file =&#x3e; {
+    file.dispose();
+    return () =&#x3e; unlink(file.destinationPath);
+  });
+
+  const writePromise = promiseReduce(toWrite, file =&#x3e; {
+    return () =&#x3e; writeFile(file.destinationPath, file.compiled);
+  });
+
+  return removePromise.then(() =&#x3e; writePromise);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+const assets = Array.from(fileList.assets.values());
+const changed = assets.filter(f =&#x3e; f.compilationTime &#x3e;= startTime || f.removed);
+const toRemove = changed.filter(f =&#x3e; f.removed);
+const toWrite = changed.filter(f =&#x3e; !f.removed);
+
+debug(`Writing ${toWrite.length}/${assets.length} assets, removing ${toRemove.length}`);
+
+return generate.<span class="apidocCodeKeywordSpan">writeStatics</span>(toRemove, toWrite);
+};
+
+const write = (fileList, config, joinConfig, optimizers, startTime) =&#x3e; {
+const files = getFiles(fileList, config, joinConfig);
+checkWritten(fileList, files, startTime);
+const errors = files
+  .map(generated =&#x3e; {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.brunch.helpers" id="apidoc.module.brunch.helpers">module brunch.helpers</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.FrozenMap" id="apidoc.element.brunch.helpers.FrozenMap">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>FrozenMap
+        <span class="apidocSignatureSpan">(key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class FrozenMap extends Map {
+  set(key) {
+    throw new TypeError(`Can&#x27;t set property &#x27;${key}&#x27;, map is not extensible`);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.FrozenSet" id="apidoc.element.brunch.helpers.FrozenSet">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>FrozenSet
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class FrozenSet extends Set {
+  add(value) {
+    throw new TypeError(`Can&#x27;t add value &#x27;${value}&#x27;, set is not extensible`);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.asyncFilter" id="apidoc.element.brunch.helpers.asyncFilter">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>asyncFilter
+        <span class="apidocSignatureSpan">(arr, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(arr, fn) =&#x3e; {
+  const promises = arr.map(item =&#x3e; fn(item).then(result =&#x3e; [item, result]));
+  return Promise.all(promises).then(data =&#x3e; {
+    return data.filter(x =&#x3e; x[1]).map(x =&#x3e; x[0]);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (out.depsWereOk) return;
+    const pkgs = out.error.filter(x =&#x3e; x.includes(&#x27;:&#x27;)).map(x =&#x3e; x.split(&#x27;:&#x27;, 1)[0]);
+    throw pkgs;
+  }).catch(pkgs =&#x3e; {
+    // filter out symlinked packages
+    const pkgPath = pkg =&#x3e; sysPath.join(packageDir, &#x27;node_modules&#x27;, pkg);
+    const isNotSymlink = pkg =&#x3e; helpers.isSymlink(pkgPath(pkg)).then(x =&#x3e; !x);
+    return helpers.<span class="apidocCodeKeywordSpan">asyncFilter</span>(pkgs, isNotSymlink).then(unmetPkgs =&#x3e; {
+      if (!unmetPkgs.length) return;
+      logger.info(`Using outdated versions of ${unmetPkgs.join(&#x27;, &#x27;)}, trying to update to match package.json versions
+`);
+      return install({rootPath: packageDir, pkgType: &#x27;package&#x27;});
+    });
+  }).then(() =&#x3e; config);
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.deepAssign" id="apidoc.element.brunch.helpers.deepAssign">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>deepAssign
+        <span class="apidocSignatureSpan">(target, source, filter)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(target, source, filter) =&#x3e; {
+  const shouldMerge = typeof filter === &#x27;function&#x27; &#x26;&#x26;
+    filter(target, source) ||
+    (() =&#x3e; true);
+
+  Object.keys(source).forEach(key =&#x3e; {
+    const value = source[key];
+    const isObject = toString.call(value) === &#x27;[object Object]&#x27;;
+    if (isObject &#x26;&#x26; shouldMerge(key, value)) {
+      let nested = target[key];
+      if (nested == null) nested = target[key] = {};
+      deepAssign(nested, value, filter);
+    } else {
+      target[key] = value;
+    }
+  });
+
+  return target;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (env.length &#x26;&#x26; &#x27;overrides&#x27; in config) {
+  config.overrides._default = {};
+  Object.keys(config).forEach(prop =&#x3e; {
+    const isObject = toString.call(config[prop]) === &#x27;[object Object]&#x27;;
+    if (prop === &#x27;overrides&#x27; || !isObject) return;
+
+    const override = config.overrides._default[prop] = {};
+    helpers.<span class="apidocCodeKeywordSpan">deepAssign</span>(override, config[prop]);
+  });
+}
+env.forEach(override =&#x3e; {
+  const plug = config.plugins;
+  const overrideProps = config.overrides &#x26;&#x26; config.overrides[override] || {};
+  const specials = {on: &#x27;off&#x27;, off: &#x27;on&#x27;};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.deepFreeze" id="apidoc.element.brunch.helpers.deepFreeze">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>deepFreeze
+        <span class="apidocSignatureSpan">(object, except)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(object, except) =&#x3e; {
+  Object.freeze(object);
+
+  for (const key of Object.keys(object)) {
+    if (except &#x26;&#x26; except.includes(key)) continue;
+
+    const value = object[key];
+    if (value instanceof RegExp) continue;
+    if (!Object.isFrozen(value)) {
+      deepFreeze(value, except);
+    }
+  }
+
+  return object;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    .then(fromWorker || addDefaultServer)
+    .then(config =&#x3e; applyOverrides(config, params.env))
+    .then(config =&#x3e; helpers.deepAssign(config, params))
+    .then(trimTrailingSlashes)
+    .then(normalizeConfig)
+    .then(checkProjectDependencies)
+    .then(fromWorker || addPackageManagers)
+    .then(helpers.<span class="apidocCodeKeywordSpan">deepFreeze</span>(dontFreeze));
+};
+
+// worker don&#x27;t need default server, deprecation warnings, or package manager support
+const loadConfigWorker = (persistent, options) =&#x3e; {
+  return loadConfig(persistent, options, true);
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.flatten" id="apidoc.element.brunch.helpers.flatten">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>flatten
+        <span class="apidocSignatureSpan">([], array)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">array =&#x3e; [].concat.apply([], array)</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+});
+};
+
+// Filter paths that exist and watch them with `chokidar` package.
+const getWatchedPaths = config =&#x3e; {
+const configs = config.paths.allConfigFiles;
+const pkg = config.packageInfo;
+const getFiles = pkgs =&#x3e; helpers.<span class="apidocCodeKeywordSpan">flatten</span>(pkgs.components.map(c =&#x3e; c.files));
+const watched = config.paths.watched.concat(configs, getFiles(pkg.npm), getFiles(pkg.bower));
+return filterNonExistentPaths(watched);
+};
+
+const setDefaultJobsCount = jobs =&#x3e; {
+const MAX_JOBS = 32;
+const env = process.env.BRUNCH_JOBS;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.formatError" id="apidoc.element.brunch.helpers.formatError">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>formatError
+        <span class="apidocSignatureSpan">(file.error, file.error.pipelineCode, file.path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">file =&#x3e; {
+  return getFormattedError(file.error, file.error.pipelineCode, file.path);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.formatOptimizerError" id="apidoc.element.brunch.helpers.formatOptimizerError">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>formatOptimizerError
+        <span class="apidocSignatureSpan">(error, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(error, path) =&#x3e; {
+  return getFormattedError(error, &#x27;Optimizing&#x27;, path);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.fsExists" id="apidoc.element.brunch.helpers.fsExists">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>fsExists
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">path =&#x3e; {
+  return fsaccess(path).then(() =&#x3e; true, () =&#x3e; false);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    throw new BrunchError(&#x27;PKG_JSON_INVALID&#x27;, {error});
+  }
+  throw error;
+});
+
+const checkComponents = config =&#x3e; {
+  const path = sysPath.resolve(config.paths.root, &#x27;component.json&#x27;);
+  helpers.<span class="apidocCodeKeywordSpan">fsExists</span>(path).then(exists =&#x3e; {
+    if (exists) {
+      logger.warn(&#x27;Detected component.json in project root. Component.json is no longer supported. You could switch to keeping
+ dependencies in NPM (package.json), or revert to Brunch 2.2.&#x27;);
+    }
+  });
+};
+
+const addPackageManagers = config =&#x3e; {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.generateCompilationLog" id="apidoc.element.brunch.helpers.generateCompilationLog">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>generateCompilationLog
+        <span class="apidocSignatureSpan">(startTime, copiedAssets, generatedFiles, disposedFiles)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(startTime, copiedAssets, generatedFiles, disposedFiles) =&#x3e; {
+  const getName = file =&#x3e; basename(file.path);
+  const copied = copiedAssets.map(getName);
+  const generated = [];
+  const compiled = [];
+  let cachedCount = 0;
+  const dgen = disposedFiles.generated;
+  generatedFiles.forEach(generatedFile =&#x3e; {
+    let isChanged = false;
+    let locallyCompiledCount = 0;
+    const len = generatedFile.sourceFiles.length;
+    generatedFile.sourceFiles.forEach(sourceFile =&#x3e; {
+      if (sourceFile.compilationTime &#x3e;= startTime) {
+        isChanged = true;
+        locallyCompiledCount++;
+        const sourceName = getName(sourceFile);
+        if (!compiled.includes(sourceName)) {
+          compiled.push(sourceName);
+        }
+      }
+      if (!isChanged &#x26;&#x26; dgen.includes(generatedFile)) isChanged = true;
+    });
+    if (isChanged) {
+      generated.push(getName(generatedFile));
+      cachedCount += len - locallyCompiledCount;
+    }
+  });
+  const disposed = disposedFiles.sourcePaths;
+  const generatedLog = (() =&#x3e; {
+    switch (generated.length) {
+      case 0: return &#x27;&#x27;;
+      case 1: return ` into ${generated}`;
+    }
+    return ` into ${generated.length} files`;
+  })();
+  const compiledLog = (() =&#x3e; {
+    switch (compiled.length) {
+      case 0:
+        switch (disposed.length) {
+          case 0: return &#x27;&#x27;;
+          case 1: return `removed ${disposed}`;
+        }
+        return `removed ${disposed.length}`;
+      case 1:
+        return `compiled ${compiled}`;
+    }
+    return `compiled ${compiled.length}`;
+  })();
+  const cachedLog = (() =&#x3e; {
+    if (cachedCount === 0) return compiled.length &#x3c;= 1 ? &#x27;&#x27; : &#x27; files&#x27;;
+
+    switch (compiled.length) {
+      case 0:
+        const noun = generated.length &#x3e; 1 ? &#x27;&#x27; : &#x27; files&#x27;;
+        return ` and wrote ${cachedCount} cached${noun}`;
+      case 1:
+        const cachedCountName = `file${cachedCount === 1 ? &#x27;&#x27; : &#x27;s&#x27;}`;
+        return ` and ${cachedCount} cached ${cachedCountName}`;
+    }
+    return ` files and ${cachedCount} cached`;
+  })();
+  const nonAssetsLog = compiledLog + cachedLog + generatedLog;
+  const sep = nonAssetsLog &#x26;&#x26; copied.length ? &#x27;, &#x27; : &#x27;&#x27;;
+  const assetsLog = (() =&#x3e; {
+    switch (copied.length) {
+      case 0: return &#x27;&#x27;;
+      case 1: return `copied ${copied}`;
+    }
+    return compiled.length ?
+      `copied ${copied.length}` :
+      `copied ${copied.length} files`;
+  })();
+  const main = nonAssetsLog + sep + assetsLog;
+  const diff = Date.now() - startTime;
+  const oneSecond = 1000;
+  const diffText = diff &#x3e; oneSecond ?
+    `${(diff / oneSecond).toFixed(1)} sec` :
+    `${diff} ms`;
+  return `${main || &#x27;compiled&#x27;} in ${diffText}`;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// create new `fs_utils.GeneratedFile` instances and write them.
+write(fileList, config, joinConfig, optimizers, startTime).then(data =&#x3e; {
+  const generatedFiles = data.changed;
+  const disposed = data.disposed;
+  fileList.removeDisposedFiles();
+  this._endBundle();
+  const assets = fileList.copiedAfter(startTime);
+  logger.info(helpers.<span class="apidocCodeKeywordSpan">generateCompilationLog</span>(
+    startTime, assets, generatedFiles, disposed
+  ));
+
+  // Pass `fs_utils.GeneratedFile` instances to callbacks.
+  // Does not block the execution.
+  this.hooks.onCompile(generatedFiles, assets);
+}, error =&#x3e; {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.getCompilationProgress" id="apidoc.element.brunch.helpers.getCompilationProgress">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>getCompilationProgress
+        <span class="apidocSignatureSpan">(timePassed, logger)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(timePassed, logger) =&#x3e; {
+  if (!timePassed) timePassed = 0;
+  let iterations = 0;
+  let timeout;
+  let initRunIn = timePassed ?
+    animationLogInterval - timePassed :
+    animationLogInterval;
+  if (initRunIn &#x3c; 0) initRunIn = 0;
+
+  const writeWithDots = () =&#x3e; {
+    const msg = iterations === 7 ? &#x27;still compiling&#x27; : &#x27;compiling&#x27;;
+    const line = msg + &#x27;.&#x27;.repeat(iterations % 4);
+    logger(line);
+    iterations++;
+    timeout = setTimeout(writeWithDots, animationLogInterval);
+  };
+
+  timeout = setTimeout(writeWithDots, initRunIn);
+  return () =&#x3e; clearTimeout(timeout);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    fileList.initial = false;
+  }).catch(logger.error);
+}
+
+_createProgress() {
+  if (this._compilationProgress || process.env.DEBUG) return false;
+  const passedTime = this._isFirstRun &#x26;&#x26; speed.sinceStart;
+  this._compilationProgress = helpers.<span class="apidocCodeKeywordSpan">getCompilationProgress</span>(
+    passedTime, logger.info
+  );
+}
+
+// Set start time of last compilation to current time.
+// Returns number.
+startCompilation(type, path) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.isSymlink" id="apidoc.element.brunch.helpers.isSymlink">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>isSymlink
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">path =&#x3e; {
+  return fslstat(path).then(stat =&#x3e; stat.isSymbolicLink(), () =&#x3e; false);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return checkDeps({packageDir, scopeList}).then(out =&#x3e; {
+    if (out.depsWereOk) return;
+    const pkgs = out.error.filter(x =&#x3e; x.includes(&#x27;:&#x27;)).map(x =&#x3e; x.split(&#x27;:&#x27;, 1)[0]);
+    throw pkgs;
+  }).catch(pkgs =&#x3e; {
+    // filter out symlinked packages
+    const pkgPath = pkg =&#x3e; sysPath.join(packageDir, &#x27;node_modules&#x27;, pkg);
+    const isNotSymlink = pkg =&#x3e; helpers.<span class="apidocCodeKeywordSpan">isSymlink</span>(pkgPath(pkg)).then(x =&#x3e; !
+x);
+    return helpers.asyncFilter(pkgs, isNotSymlink).then(unmetPkgs =&#x3e; {
+      if (!unmetPkgs.length) return;
+      logger.info(`Using outdated versions of ${unmetPkgs.join(&#x27;, &#x27;)}, trying to update to match package.json versions
+`);
+      return install({rootPath: packageDir, pkgType: &#x27;package&#x27;});
+    });
+  }).then(() =&#x3e; config);
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.prettify" id="apidoc.element.brunch.helpers.prettify">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>prettify
+        <span class="apidocSignatureSpan">(object)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">object =&#x3e; {
+  return Object.entries(object).map(pair =&#x3e; pair.join(&#x27;=&#x27;)).join(&#x27; &#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.promiseReduce" id="apidoc.element.brunch.helpers.promiseReduce">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>promiseReduce
+        <span class="apidocSignatureSpan">(array, callback, initial)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(array, callback, initial) =&#x3e; {
+  return array.reduce((promise, item) =&#x3e; {
+    return promise.then(callback(item));
+  }, Promise.resolve(initial));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.helpers.pull" id="apidoc.element.brunch.helpers.pull">
+        function <span class="apidocSignatureSpan">brunch.helpers.</span>pull
+        <span class="apidocSignatureSpan">(array, is)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(array, is) =&#x3e; {
+  const index = array.findIndex(is);
+  if (index === -1) return;
+
+  const item = array[index];
+  array.splice(index, 1);
+  return item;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.brunch.hmr" id="apidoc.module.brunch.hmr">module brunch.hmr</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.hmr.generate" id="apidoc.element.brunch.hmr.generate">
+        function <span class="apidocSignatureSpan">brunch.hmr.</span>generate
+        <span class="apidocSignatureSpan">(generateModuleFiles, nonModuleFiles, processor, deppack, definition, path, root)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(generateModuleFiles, nonModuleFiles, processor, deppack, definition, path, root) =&#x3e; {
+  const hmrPath = sysPath.join(&#x27;hmr-brunch&#x27;, &#x27;runtime.js&#x27;);
+  const hmrFile = nonModuleFiles.find(f =&#x3e; f.path.includes(hmrPath));
+
+  if (hmrFile) {
+    processor(hmrFile);
+  } else {
+    logger.warn(`HMR runtime not found for ${path}. HMR only works if use compile your JS into a single file, could it be the case
+?`);
+  }
+
+  root.add(definition);
+
+  const depGraph = JSON.stringify(deppack.graph());
+  root.add(`require.hmr(${depGraph}, function(require) {\n`);
+
+  generateModuleFiles();
+
+  root.add(&#x27;});&#x27;);
+  root.add(&#x27;// hmr end&#x27;);
+
+  nonModuleFiles.filter(f =&#x3e; f !== hmrFile).forEach(processor);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.hmr.isEnabled" id="apidoc.element.brunch.hmr.isEnabled">
+        function <span class="apidocSignatureSpan">brunch.hmr.</span>isEnabled
+        <span class="apidocSignatureSpan">(&#x27;production&#x27;)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">config =&#x3e; config.hot &#x26;&#x26; !config.env.includes(&#x27;production&#x27;)</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+return root.setSourceContent(file.node.source, data);
+  };
+
+  if (isJs) {
+const addRequire = req =&#x3e; root.add(`require(&#x27;${req}&#x27;);`);
+
+const isNpm = config.npm.enabled ? deppack.needsProcessing : () =&#x3e; false;
+const isHmr = hmr.<span class="apidocCodeKeywordSpan">isEnabled</span>(config);
+
+const moduleFiles = files.filter(f =&#x3e; isNpm(f) || f.file.isModule);
+const nonModuleFiles = files.filter(f =&#x3e; !moduleFiles.includes(f));
+
+const definition = definitionFn(path, root.sourceContents);
+const generateModuleFiles = () =&#x3e; {
+  if (config.npm.enabled &#x26;&#x26; moduleFiles.length) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.brunch.index" id="apidoc.module.brunch.index">module brunch.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.index.close" id="apidoc.element.brunch.index.close">
+        function <span class="apidocSignatureSpan">brunch.index.</span>close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">() =&#x3e; {
+  if (manager) {
+    manager.close();
+    manager = null;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+const rootPath = this.config.paths.root;
+const reWatch = () =&#x3e; {
+  logger.info(&#x27;Reloading watcher...&#x27;);
+  this.hooks.teardown();
+  const server = this.server;
+  if (server &#x26;&#x26; typeof server.close === &#x27;function&#x27;) {
+    return server.<span class="apidocCodeKeywordSpan">close</span>(restart);
+  }
+  return restart();
+};
+
+clearTimeout(this.nothingToCompileTimer);
+this.fileList.dispose();
+this.watcher.close();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.index.init" id="apidoc.element.brunch.index.init">
+        function <span class="apidocSignatureSpan">brunch.index.</span>init
+        <span class="apidocSignatureSpan">(options, cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(options, cfg) =&#x3e; {
+  manager = new WorkerManager(options, cfg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  });
+}
+
+application.loadConfig(persistent, options)
+  .then(cfg =&#x3e; {
+    this.config = cfg;
+    if (options.jobs &#x3e; 1) {
+      workers.<span class="apidocCodeKeywordSpan">init</span>(options, cfg);
+    }
+    return Promise.all([
+      getWatchedPaths(cfg._normalized),
+      serveBrunch.serve(cfg.server),
+      plugins(cfg, options.dependencies),
+    ]);
+  })
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.index.parallel" id="apidoc.element.brunch.index.parallel">
+        function <span class="apidocSignatureSpan">brunch.index.</span>parallel
+        <span class="apidocSignatureSpan">(id, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(id, fn) =&#x3e; {
+  return fn;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.index.processJob" id="apidoc.element.brunch.index.processJob">
+        function <span class="apidocSignatureSpan">brunch.index.</span>processJob
+        <span class="apidocSignatureSpan">(job, hash)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(job, hash) =&#x3e; {
+  if (typeof job === &#x27;string&#x27;) job = jobs[job];
+  if (manager) {
+    return manager.schedule(job.path, {hash: job.serialize(hash)});
+  }
+  return job.work(hash).then(null, error =&#x3e; {
+    throw cleanError(error);
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -254,33 +1613,217 @@ this.watcher = chokidar.<span class="apidocCodeKeywordSpan">watch</span>(watched
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.brunch.watch" id="apidoc.module.brunch.watch">module brunch.watch</a></h1>
+<h1><a href="#apidoc.module.brunch.modules" id="apidoc.module.brunch.modules">module brunch.modules</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.brunch.watch.watch" id="apidoc.element.brunch.watch.watch">
-        function <span class="apidocSignatureSpan">brunch.</span>watch
-        <span class="apidocSignatureSpan">()</span>
+        <a href="#apidoc.element.brunch.modules.normalizeDefinition" id="apidoc.element.brunch.modules.normalizeDefinition">
+        function <span class="apidocSignatureSpan">brunch.modules.</span>normalizeDefinition
+        <span class="apidocSignatureSpan">(definition)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">watch = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-  initWatcher(watchedPaths) {
-const isDebug = !!process.env.DEBUG;
-const config = this.config._normalized;
-const paths = config.paths;
-const isConfig = path =&#x3e; paths.allConfigFiles.includes(path);
+    <li>description and source-code<pre class="apidocCodePre">definition =&#x3e; {
+  switch (definition) {
+    case &#x27;commonjs&#x27;:
+      return () =&#x3e; commonRequireDefinition;
+    case &#x27;amd&#x27;:
+    case false:
+      return () =&#x3e; &#x27;&#x27;;
+  }
 
-speed.profile(&#x27;Loaded watcher&#x27;);
-this.watcher = chokidar.<span class="apidocCodeKeywordSpan">watch</span>(watchedPaths, Object.assign({
-  ignored,
-  persistent: config.persistent,
-}, config.watcher))
-  .on(&#x27;error&#x27;, error =&#x3e; {
-    // TODO: Watch error.
-    logger.error(error);
-  })
+  return definition;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      usePolling: watcher.usePolling,
+      awaitWriteFinish: watcher.awaitWriteFinish === true ?
+        {stabilityThreshold: 50, pollInterval: 10} :
+        watcher.awaitWriteFinish,
+    },
+    modules: {
+      wrapper: wrappers.normalizeWrapper(modules.wrapper, modules.nameCleaner),
+      definition: wrappers.<span class="apidocCodeKeywordSpan">normalizeDefinition</span>(modules.definition),
+      autoRequire: modules.autoRequire,
+    },
+  };
+
+  return config;
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.modules.normalizeWrapper" id="apidoc.element.brunch.modules.normalizeWrapper">
+        function <span class="apidocSignatureSpan">brunch.modules.</span>normalizeWrapper
+        <span class="apidocSignatureSpan">(wrapper, nameCleaner)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(wrapper, nameCleaner) =&#x3e; {
+  const wrapperFn = normalizeResult(getWrapperFn(wrapper));
+
+  return (path, compiled) =&#x3e; {
+    const name = sysPath.normalize(path).replace(/^(\.\.\/)+/, &#x27;&#x27;);
+    return wrapperFn(nameCleaner(name), compiled);
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    watcher: {
+      usePolling: watcher.usePolling,
+      awaitWriteFinish: watcher.awaitWriteFinish === true ?
+        {stabilityThreshold: 50, pollInterval: 10} :
+        watcher.awaitWriteFinish,
+    },
+    modules: {
+      wrapper: wrappers.<span class="apidocCodeKeywordSpan">normalizeWrapper</span>(modules.wrapper, modules.nameCleaner),
+      definition: wrappers.normalizeDefinition(modules.definition),
+      autoRequire: modules.autoRequire,
+    },
+  };
+
+  return config;
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.brunch.pipeline" id="apidoc.module.brunch.pipeline">module brunch.pipeline</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.pipeline.processAsset" id="apidoc.element.brunch.pipeline.processAsset">
+        function <span class="apidocSignatureSpan">brunch.pipeline.</span>processAsset
+        <span class="apidocSignatureSpan">(&#x27;compileStatic&#x27;)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">file =&#x3e; {
+  const compilers = respondTo(&#x27;compileStatic&#x27;).filter(compiler =&#x3e; {
+    return compiler.type === &#x27;template&#x27;;
+  });
+
+  const nextCompiler = file =&#x3e; {
+    const compiler = pull(compilers, compiler =&#x3e; {
+      return compiler.staticPattern.test(file.path);
+    });
+
+    return compiler ?
+      compileStatic(file, compiler).then(nextCompiler) :
+      file;
+  };
+
+  return nextCompiler(file);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.pipeline.processFile" id="apidoc.element.brunch.pipeline.processFile">
+        function <span class="apidocSignatureSpan">brunch.pipeline.</span>processFile
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">file =&#x3e; {
+  const path = file.path;
+  const isNpm = deppack.isNpm(path);
+
+  const usePlugin = isNpm ?
+    compiler =&#x3e; npmCompilers.includes(compiler.brunchPluginName) :
+    () =&#x3e; true;
+
+  const compilers = respondTo(&#x27;compile&#x27;).filter(usePlugin);
+  const nextCompiler = file =&#x3e; {
+    const compiler = pull(compilers, compiler =&#x3e; {
+      return compiler.pattern.test(file.path);
+    });
+
+    return compiler ?
+      compile(file, compiler).then(nextCompiler) :
+      file;
+  };
+
+  const compiled = lint(file).then(nextCompiler);
+  if (!isNpm) return compiled;
+
+  return compiled.then(file =&#x3e; {
+    const absPath = sysPath.resolve(path);
+
+    return deppack.wrapSourceInModule(file.data, absPath).then(wrapped =&#x3e; {
+      file.data = wrapped;
+      return file;
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.pipeline.setNpmCompilers" id="apidoc.element.brunch.pipeline.setNpmCompilers">
+        function <span class="apidocSignatureSpan">brunch.pipeline.</span>setNpmCompilers
+        <span class="apidocSignatureSpan">(array)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setNpmCompilers(array) {
+  npmCompilers = array;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  this.server = res[1];
+  const hooks = res[2].hooks;
+  hooks.onCompile.push({onCompile});
+  this.hooks = mergeHooks(hooks, cfg.hooks);
+  const plugins = this.plugins = res[2].plugins;
+
+  pipeline.setPlugins(plugins.all);
+  pipeline.<span class="apidocCodeKeywordSpan">setNpmCompilers</span>(cfg.npm.compilers);
+  deppack.setPlugins(plugins, cfg.npm.compilers);
+
+  return Promise.all(this.hooks.preCompile()).then(() =&#x3e; {
+    this.initWatcher(watchedPaths);
+    this.initCompilation();
+  });
+})
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.brunch.pipeline.setPlugins" id="apidoc.element.brunch.pipeline.setPlugins">
+        function <span class="apidocSignatureSpan">brunch.pipeline.</span>setPlugins
+        <span class="apidocSignatureSpan">(array)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setPlugins(array) {
+  plugins = array;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+const watchedPaths = res[0];
+this.server = res[1];
+const hooks = res[2].hooks;
+hooks.onCompile.push({onCompile});
+this.hooks = mergeHooks(hooks, cfg.hooks);
+const plugins = this.plugins = res[2].plugins;
+
+pipeline.<span class="apidocCodeKeywordSpan">setPlugins</span>(plugins.all);
+pipeline.setNpmCompilers(cfg.npm.compilers);
+deppack.setPlugins(plugins, cfg.npm.compilers);
+
+return Promise.all(this.hooks.preCompile()).then(() =&#x3e; {
+  this.initWatcher(watchedPaths);
+  this.initCompilation();
+});
 ...</pre></li>
     </ul>
 

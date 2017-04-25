@@ -25,7 +25,7 @@
 <tspan x="10" y="362">  │   ├── extglob@0.3.2 </tspan>
 <tspan x="10" y="378">  │   ├── filename-regex@2.0.0 </tspan>
 <tspan x="10" y="394">  │   ├── is-extglob@1.0.0 </tspan>
-<tspan x="10" y="410">  │   ├─┬ kind-of@3.1.0 </tspan>
+<tspan x="10" y="410">  │   ├─┬ kind-of@3.2.0 </tspan>
 <tspan x="10" y="426">  │   │ └── is-buffer@1.1.5 </tspan>
 <tspan x="10" y="442">  │   ├─┬ normalize-path@2.1.1 </tspan>
 <tspan x="10" y="458">  │   │ └── remove-trailing-separator@1.0.1 </tspan>
@@ -224,9 +224,9 @@
 <tspan x="10" y="3546">  │   │ ├── encodeurl@1.0.1 </tspan>
 <tspan x="10" y="3562">  │   │ ├── escape-html@1.0.3 </tspan>
 <tspan x="10" y="3578">  │   │ ├── etag@1.8.0 </tspan>
-<tspan x="10" y="3594">  │   │ ├─┬ finalhandler@1.0.1 </tspan>
-<tspan x="10" y="3610">  │   │ │ ├─┬ debug@2.6.3 </tspan>
-<tspan x="10" y="3626">  │   │ │ │ └── ms@0.7.2 </tspan>
+<tspan x="10" y="3594">  │   │ ├─┬ finalhandler@1.0.2 </tspan>
+<tspan x="10" y="3610">  │   │ │ ├─┬ debug@2.6.4 </tspan>
+<tspan x="10" y="3626">  │   │ │ │ └── ms@0.7.3 </tspan>
 <tspan x="10" y="3642">  │   │ │ └── unpipe@1.0.0 </tspan>
 <tspan x="10" y="3658">  │   │ ├── fresh@0.5.0 </tspan>
 <tspan x="10" y="3674">  │   │ ├── merge-descriptors@1.0.1 </tspan>
