@@ -1,6 +1,6 @@
 # npmdoc-brunch
 
-#### api documentation for  [brunch (v2.10.9)](http://brunch.io/)  [![npm package](https://img.shields.io/npm/v/npmdoc-brunch.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-brunch) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-brunch.svg)](https://travis-ci.org/npmdoc/node-npmdoc-brunch)
+#### basic api documentation for  [brunch (v2.10.9)](http://brunch.io/)  [![npm package](https://img.shields.io/npm/v/npmdoc-brunch.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-brunch) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-brunch.svg)](https://travis-ci.org/npmdoc/node-npmdoc-brunch)
 
 #### Fast front-end web app build tool with simple declarative config, seamless incremental compilation for rapid development, an opinionated pipeline and workflow, and core support for source maps
 
